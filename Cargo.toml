@@ -1,0 +1,21 @@
+[package]
+name = "oxideux-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.98"
+bincode = "1.3.3"
+directories = "6.0.0"
+indexmap = "2.9.0"
+json = "0.12.4"
+regex = "1.11.1"
+serde = { version = "1.0.219", features = ["derive"] }
+
+[[bin]]
+name = "server"
+src = "src/bin/server.rs"
+
+[[bin]]
+name = "client"
+src = "src/bin/client.rs"
